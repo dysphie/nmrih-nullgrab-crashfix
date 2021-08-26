@@ -1,7 +1,9 @@
 # [NMRiH] Null Grab Crash Fix
-Fixes `server.dll + 0x2ff6a1` crashes on Windows. Don't try to run this on Linux.
+Fixes a server crash in No More Room in Hell 1.11.4, seen as:
 
-You'll see this crash happen when a zombie grabs a player and gets killed unnaturally (via "Kill" input or similar)
-An example of this is nmo_lighthouse_v2 when a player gets grabbed as they're barricading the town doors.
+- `server.dll + 0x2ff6a1` on Windows
+- `server_srv.so!CNMRiH_WeaponBase::DoShove() + 0x52f` on Linux
 
-This will also let the player walk again after the fact.
+You'll see this crash occur when a zombie grabs a player and gets killed unnaturally (via `Kill` input or similar). An example of this would be nmo_lighthouse_v2 when a player gets grabbed as they're barricading the town doors.
+
+The fix will also let the player walk again after the fact.
