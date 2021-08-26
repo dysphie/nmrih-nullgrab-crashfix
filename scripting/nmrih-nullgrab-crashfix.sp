@@ -5,7 +5,7 @@ public Plugin myinfo = {
     name        = "[NMRiH] Null Grab Crash Fix",
     author      = "Dysphie",
     description = "Fix server crash related to zombie grabs",
-    version     = "0.2.0",
+    version     = "0.2.1",
     url         = ""
 };
 
@@ -33,7 +33,7 @@ public void OnPluginStart()
 // Clear grabber when a zombie dies
 public void OnEntityDestroyed(int entity)
 {
-	if (HasEntProp(entity, Prop_Send, "_headSplit"))
+	if (IsValidEdict(entity) && HasEntProp(entity, Prop_Send, "_headSplit"))
 	{
 		// CNMRiH_BaseZombie::m_hGrabEnt
 		int grabEnt = GetEntDataEnt2(entity, m_hGrabEnt);
