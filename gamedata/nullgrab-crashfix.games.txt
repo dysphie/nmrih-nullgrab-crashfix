@@ -1,0 +1,20 @@
+"Games"
+{
+	"nmrih"
+	{
+		"Offsets"
+		{
+			"CNMRiH_Player::m_pGrabbedBy"
+			{
+				"windows"	"4944"
+				"linux"		"4964"
+			}
+
+			"CNMRiH_BaseZombie::m_hGrabEnt"
+			{
+				"windows"	"3724"
+				"linux"		"3740"
+			}
+		}
+	}
+}
