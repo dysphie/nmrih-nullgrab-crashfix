@@ -1,3 +1,6 @@
+
+> :warning: This fix is no longer needed as of NMRiH 1.11.5
+
 # [NMRiH] Null Grab Crash Fix
 Fixes a server crash in No More Room in Hell 1.11.4, seen as:
 
